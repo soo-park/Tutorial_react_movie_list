@@ -4,7 +4,7 @@ const MovieListEntry = (props) => {
 
   // react style accepts the camel case
   var style = {
-    backgroundColor: props.movie.watched ? "light-green": 'white'
+    "backgroundColor": props.movie.watched ? "lightGreen": "white"
   };
 
   return (
@@ -13,9 +13,9 @@ const MovieListEntry = (props) => {
         {props.movie.title}
       <input type="button"
              className="watched"
-             value="unwatched"
+             value="watched"
              style={style}
-             onClick={()=>{props.checkWatched(props.movie);}}/>
+             onClick={()=>{props.toggleWatched(props.movie);}}/>
       </div>
     </div>
   );

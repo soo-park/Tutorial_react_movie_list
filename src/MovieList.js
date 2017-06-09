@@ -5,7 +5,7 @@ import MovieListEntry from './MovieListEntry.js'
 const MovieList = (props) => {
 
   const MovieListEntries = props.movies.map((movie, idx) => (
-    <MovieListEntry key={idx} movie={movie} checkWatched={props.checkWatched}/>
+    <MovieListEntry key={idx} movie={movie} toggleWatched={props.toggleWatched}/>
   ));
 
   return (
